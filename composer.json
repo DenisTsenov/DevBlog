@@ -46,15 +46,7 @@
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover"
-        ],
-        "post-install-cmd": [
-        "Shipu\\Installer\\ComposerScripts::addFile",
-        "php artisan vendor:publish --tag=public"
-      ],
-      "post-update-cmd": [
-        "Shipu\\Installer\\ComposerScripts::addFile",
-        "php artisan vendor:publish --tag=public"
-      ]
+        ]
     },
     "config": {
         "preferred-install": "dist",
